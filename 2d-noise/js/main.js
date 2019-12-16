@@ -1,5 +1,6 @@
-const width = 200;
-const height = 200;
+const width = 300;
+const height = 300;
+const padding = 30;
 let z = 0;
 
 // const getValue = (i, min, max) => random(min, max);
@@ -7,8 +8,8 @@ const getValue = (d1, d2, d3, min, max) => min + noise(d1 / 50, d2 / 50, d3 / 40
 
 const chartValues = () => {
   const points = [];
-  for (let x = 20; x < width - 20; x++) {
-    for (let y = 20; y < height - 20; y++) {
+  for (let x = padding; x < width - padding; x++) {
+    for (let y = padding; y < height - padding; y++) {
       points.push(createVector(x, y));
     }
   }
