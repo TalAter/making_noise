@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/TalAter/making-noise/issues"
   },
-  "homepage": "https://github.com/TalAter/making-noise#readme"
+  "homepage": "https://github.com/TalAter/making-noise#readme",
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-p5js": "^1.0.1",
+    "eslint-plugin-import": "^2.19.1"
+  }
 }
