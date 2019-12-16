@@ -13,5 +13,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
   },
-  rules: {},
+  rules: {
+    'arrow-parens': ['error', 'as-needed'],
+  },
 };
