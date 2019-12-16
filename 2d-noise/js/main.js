@@ -4,7 +4,7 @@ const padding = 30;
 let z = 0;
 
 // const getValue = (i, min, max) => random(min, max);
-const getValue = (d1, d2, d3, min, max) => map(noise(d1 / 275, d2 / 275, d3 / 120), 0, 1, min, max);
+const getValue = (d1, d2, d3, min, max) => map(noise(d1 / 250, d2 / 250, d3 / 120), 0, 1, min, max);
 
 const chartValues = () => {
   for (let x = padding; x < width - padding; x++) {
