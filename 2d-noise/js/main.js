@@ -7,16 +7,10 @@ let z = 0;
 const getValue = (d1, d2, d3, min, max) => map(noise(d1 / 275, d2 / 275, d3 / 120), 0, 1, min, max);
 
 const chartValues = () => {
-  const points = [];
   for (let x = padding; x < width - padding; x++) {
     for (let y = padding; y < height - padding; y++) {
-      points.push(createVector(x, y));
+      set(x, y, color(getValue(x, y, z, 0, 255)));
     }
-  }
-  for (let i = 0; i < points.length; i++) {
-    const { x } = points[i];
-    const { y } = points[i];
-    set(x, y, color(getValue(x, y, z, 0, 255)));
   }
   updatePixels();
 };
