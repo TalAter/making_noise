@@ -16,9 +16,9 @@ const chartValues = () => {
   for (let i = 0; i < points.length; i++) {
     const { x } = points[i];
     const { y } = points[i];
-    stroke(getValue(x, y, z, 0, 255));
-    point(x, y);
+    set(x, y, color(getValue(x, y, z, 0, 255)));
   }
+  updatePixels();
 };
 
 const drawFPS = () => {
