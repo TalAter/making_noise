@@ -20,6 +20,12 @@ const chartValues = () => {
   }
 };
 
+const drawFPS = () => {
+  fill(255);
+  stroke(0);
+  text(`${int(getFrameRate())} FPS`, padding, height - 15);
+};
+
 setup = function setup() {
   createCanvas(width, height);
 };
@@ -27,5 +33,6 @@ setup = function setup() {
 draw = function draw() {
   background(0);
   chartValues();
+  drawFPS();
   z++;
 };
