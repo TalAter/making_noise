@@ -1,5 +1,3 @@
-const width = 300;
-const height = 300;
 const pointCount = 500;
 const r = 100;
 
@@ -21,7 +19,7 @@ const drawShape = () => {
 };
 
 setup = function setup() {
-  createCanvas(width, height);
+  createCanvas(300, 300);
 };
 
 draw = function draw() {

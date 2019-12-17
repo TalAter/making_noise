@@ -1,6 +1,3 @@
-const width = 640;
-const height = 480;
-const padding = 30;
 let t = 0;
 
 // const getValue = (min, max) => random(min, max);
@@ -8,15 +5,15 @@ const getValue = (min, max, d1, d2) => min + noise(d1 / 250, d2 / 250) * max;
 
 const chartValues = () => {
   stroke(150);
-  for (let x = padding; x < width - padding; x++) {
-    point(x, getValue(padding, height - padding, x, t));
-    // stroke(getValue(0, 255 - padding, x, t));
-    // line(x, padding, x, height - padding);
+  for (let x = 0; x < width; x++) {
+    point(x, getValue(0, height, x, t));
+    // stroke(getValue(0, 255, x, t));
+    // line(x, 0, x, height);
   }
 };
 
 setup = function setup() {
-  createCanvas(width, height);
+  createCanvas(300, 300);
 };
 
 draw = function draw() {

@@ -1,5 +1,3 @@
-const width = 400;
-const height = 400;
 const gridSize = 20;
 let t = 0;
 const angles = [];
@@ -31,7 +29,7 @@ const drawField = () => {
 };
 
 setup = function setup() {
-  createCanvas(width, height);
+  createCanvas(300, 300);
 };
 
 draw = function draw() {
