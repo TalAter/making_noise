@@ -10,6 +10,8 @@ const chartValues = () => {
   stroke(150);
   for (let x = padding; x < width - padding; x++) {
     point(x, getValue(padding, height - padding, x, t));
+    // stroke(getValue(0, 255 - padding, x, t));
+    // line(x, padding, x, height - padding);
   }
 };
 
