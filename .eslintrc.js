@@ -17,5 +17,6 @@ module.exports = {
     'arrow-parens': ['error', 'as-needed'],
     'no-console': ['off'],
     'no-plusplus': ['off'],
+    'max-len': ['error', 140],
   },
 };
