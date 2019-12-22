@@ -1,7 +1,7 @@
 let t = 0;
 
 // const getValue = (min, max) => random(min, max);
-const getValue = (min, max, d1, d2) => min + noise(d1 / 250, d2 / 250) * max;
+const getValue = (min, max, d1, d2 = 0, d3 = 0) => map(noise(d1 / 250, d2 / 250, d3 / 120), 0, 1, min, max);
 
 const chartValues = () => {
   stroke(150);

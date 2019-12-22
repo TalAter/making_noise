@@ -3,7 +3,7 @@ let t = 0;
 const angles = [];
 
 // const getValue = (min, max) => random(min, max);
-const getValue = (min, max, d1, d2, d3) => map(noise(d1 / 15, d2 / 15, d3 / 100), 0, 1, min, max);
+const getValue = (min, max, d1, d2 = 0, d3 = 0) => map(noise(d1 / 15, d2 / 15, d3 / 100), 0, 1, min, max);
 
 const calculateAngles = () => {
   for (let y = 0; y <= height / gridSize; y++) {

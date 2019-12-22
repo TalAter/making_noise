@@ -2,7 +2,7 @@ const pointCount = 500;
 const r = 100;
 
 // const getValue = (min, max) => random(min, max);
-const getValue = (min, max, d1) => map(noise(d1 / 60), 0, 1, min, max);
+const getValue = (min, max, d1, d2 = 0, d3 = 0) => map(noise(d1 / 60, d2 / 60, d3 / 100), 0, 1, min, max);
 
 const drawShape = () => {
   translate(width / 2, height / 2);
